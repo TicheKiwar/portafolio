@@ -1,0 +1,8 @@
+.first{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ededf5;
+
+}

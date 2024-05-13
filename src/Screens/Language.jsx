@@ -1,15 +1,13 @@
 
-export function language({imaLanguage, name}) {
+import style from './Language.module.css'
+
+export function Language({type, name}) {
   return (
     <article>
-      <header>
-
-        <img   
-            alt={'imagen de ${name}'}
-            src="https://unavatar.io/"
-            /> 
-      <div>languang</div>
-            </header>
-        </article>
+        <img className={style.cardI}
+            alt={`imagen de ${name}`}
+            src={`/src/image/${type}/${name}.png`}
+            />
+    </article>
   )
 }

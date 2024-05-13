@@ -1,12 +1,7 @@
 import style from './service.module.css'
-import kiwarSvg from '../image/kiwar.svg'
 import kiwarjpg from '../image/kiwar.jpeg'
 
 const Service = () => {
-  
-  
-  
-  
   return (
     <div className={style.first}>
       <div className={style.second}>

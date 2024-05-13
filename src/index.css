@@ -1,6 +1,6 @@
 :root{
   background-image: linear-gradient(#eaeaf3,#c4c4e2);
-  position: fixed;
+  position: sticky;
   inset: 0;
   font-family: 'Arial', sans-serif;
 }
