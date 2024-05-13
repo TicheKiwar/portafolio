@@ -1,44 +1,39 @@
 import { Link } from "react-scroll"
 import style from './NavBar.module.css'
-import { useState } from "react"
-import { IoMenuOutline } from "react-icons/io5";
-import { IoCloseSharp } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa6";
+import { IoIosContact } from "react-icons/io";
+
+
 
 const NavBar = () => {
-  const[navBarOpen,setNavBarOpen] =useState(false)
+  
   const links=[
     {
       id: 1,
-      link:'Home',
+      link: <FaGithub size={20}/>,
+      url: 'https://github.com/TicheKiwar',
     },
     {
       id: 2,
-      link:'Service',
+      link:<IoIosContact size={20}/>,
+      url: 'https://github.com/TicheKiwar',
     },
     {
       id: 3,
       link:'Contact',
+      url: 'https://github.com/TicheKiwar',
     },
   ]
   return (
-      <div className={!navBarOpen===true ? style.navBar : style.navBarOpen}>
+      <div className={style.navBar}>
         <p>Briefcase |</p>
-        {!navBarOpen ?
-        <IoMenuOutline onClick={()=> setNavBarOpen(!navBarOpen)} size={25}/>
-          : <IoCloseSharp onClick={()=> setNavBarOpen(!navBarOpen)} size={25}/>
-
-      }
-
-        {
-          navBarOpen &&(
-          <ul>
+          <ul style={{ display: 'flex', listStyle: 'none' }}>
           {links.map((x)=>(
-            <div>
-              <Link>{x.link === "Service" ? "Estamos en Service":x.link}</Link>
-            </div>
+            <li key={x.id} style={{ marginRight: '20px' }}>
+              <Link to={x.url}>{x.link}</Link>
+            </li>
           ))}
         </ul>
-        )}
       </div>
   )
 }

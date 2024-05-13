@@ -1,0 +1,38 @@
+.service{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.first{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ededf5;
+
+}
+.second{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efebf8;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 170px;
+    position: relative; /* Establece la posición del elemento como relativa */
+    z-index: 1; /* Asegura que el elemento esté encima de otros elementos */
+    box-shadow: 25px 25px 50px rgba(90, 8, 8, 0.5);
+}
+
+.letter{
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 50px;
+}
