@@ -15,7 +15,9 @@ const Service = () => {
       <div>
       <p>
         Mi nombre es Kiwar Tiche, estudiante de la Universidad Técnica de Ambato, 
-        cursando la carrera de Software
+        cursando la carrera de Software. Mis estudios primarios y secundarios fueron
+        en la Unidad Educativa Intercultural Bilingue Chibuleo. Me gradue como 
+        Bachiller en Ciencias e ingrese a la universidad.
       </p>
 
       </div>

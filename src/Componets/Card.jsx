@@ -51,10 +51,9 @@ const Card = () => {
       </div>
       <div className={style.languages}>
         {languages.map(({ type, name }, index) => (
-            <div className={style.header}>
+
                 <Language key={`${type}-${name}-${index}`} type={type} name={name} />
-                <h3>{name}</h3>
-            </div>
+
         ))}
       </div>
     </section>
